@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0069d9;
+    --font-family: Arial, sans-serif;
+    --font-size: 16px;
+    --line-height: 24px;
+    --header-height: 100px;
+    --section-padding: 20px;
+    --button-padding: 10px 20px;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header,
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    height: var(--header-height);
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: var(--section-padding);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: var(--button-padding);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+img.product-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #777;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (min-width: 768px) {
+    main {
+        padding: 40px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 15px 30px;
+    }
+}
